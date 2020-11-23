@@ -69,8 +69,8 @@ def pipe_score_check():
     if pipe_list:
         for pipe in pipe_list:
             if 95 < pipe.centerx < 105 and can_score:
-                score += 1
-                score_counter -= 0.5
+                score += 2
+                score_counter -= 1
                 if score_counter<0:
                     score_sound.play()
                     score_counter = 100
